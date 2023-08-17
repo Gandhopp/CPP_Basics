@@ -7,14 +7,8 @@ AStatue::AStatue()
 
 }
 
-void AStatue::BeginPlay()
+void AStatue::Pickup_Implementation()
 {
-	Super::BeginPlay();
-	
-}
-
-void AStatue::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
+	GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, FString("Interfaced"));
 
 }
